@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline"
 import Link from "next/link";
 
@@ -20,7 +20,6 @@ const ProjectsCard = ({imgUrl, title, description, gitUrl, previewUrl}) => {
                 <p className="text-[#ADB7BE]">{ description }</p>
             </div>
         </div>
-        
     )
 };
 

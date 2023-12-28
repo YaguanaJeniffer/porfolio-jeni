@@ -46,11 +46,11 @@ export const EmailSection = () => {
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
             <div >
                 <h5 className='text-xl font-bold text-white my-2'>
-                    Let's Connect
+                    Let&apos;s Connect
                 </h5>
                 <p className='text-[#ADB7BE] mb-4 max-x-md'>
                     {" "}
-                    I'm actively seeking new opportunities, and my inbox is eagerly waiting for your message. Whether you have a question or just want to drop a friendly 'hi', I'll make sure to get back to you promptly! Your thoughts and inquiries are always welcomed.
+                    I&apos;m actively seeking new opportunities, and my inbox is eagerly waiting for your message. Whether you have a question or just want to drop a friendly &quot;hi, I&apos;ll make sure to get back to you promptly! Your thoughts and inquiries are always welcomed.
                 </p>
                 <div className='socials flex flex-row gap-2'>
                     <Link href="github.com">

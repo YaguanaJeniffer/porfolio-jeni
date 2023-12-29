@@ -9,45 +9,54 @@ const projectsData = [
         id: 1,
         title: "React",
         description: "Project1",
-        image: "/images/avatar.png",
+        image: "/images/ProjectsPorfolio/imagen1.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/YaguanaJeniffer/porfolio-jeni.git",
         previewUrl: "/"
     },
     {
         id: 2,
         title: "React",
         description: "Project1",
-        image: "/images/AboutMe.jpeg",
+        image: "/images/ProjectsPorfolio/imagen2.jpg",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/Puetate/simulator-amortization-app.git",
         previewUrl: "/"
     },
     {
         id: 3,
         title: "React",
         description: "Project1",
-        image: "/images/avatar.png",
+        image: "/images/ProjectsPorfolio/imagen3.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/utaPosgrados/MerecimientosPosgrados",
         previewUrl: "/"
     },
     {
         id: 4,
         title: "React",
         description: "Project1",
-        image: "/images/avatar.png",
+        image: "/images/ProjectsPorfolio/imagen4.jpg",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/TigselemaAlex/ArteCTT-ADMIN",
         previewUrl: "/"
     },
     {
         id: 5,
         title: "React",
         description: "Project1",
-        image: "/images/avatar.png",
+        image: "/images/ProjectsPorfolio/imagen5.jpg",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/YaguanaJeniffer/Frontend-Cliente",
+        previewUrl: "/"
+    },
+    {
+        id: 6,
+        title: "React",
+        description: "Project1",
+        image: "/images/ProjectsPorfolio/imagen6.jpg",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/Puetate/facturacion-electronica-app.git",
         previewUrl: "/"
     },
 ]

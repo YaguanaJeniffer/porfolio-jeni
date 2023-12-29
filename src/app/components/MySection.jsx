@@ -6,6 +6,18 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const MySection = () => {
+
+    const handleDownload = (event) => {
+        event.preventDefault(); // Evita la navegación
+        // Lógica para descargar el CV
+        const link = document.createElement('a');
+        link.href = '/documents/Currículo_Jeniffer_Yaguana.pdf'; // Reemplaza con la ruta correcta a tu archivo CV
+        link.download = "Currículo_Jeniffer_Yaguana.pdf"; // Nombre del archivo al descargar
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
     <section className="lg:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -41,11 +53,11 @@ const MySection = () => {
                     <Link href="/#contact" className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
                         Hire Me
                     </Link>
-                    <Link  href="/" className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
+                    <button className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3" onClick={handleDownload}>
                         <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                            Download CV
+                        Download CV
                         </span>
-                    </Link>
+                    </button>
                 </div>
             </motion.div>
             <motion.div
@@ -53,16 +65,16 @@ const MySection = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
                 className="col-span-4 place-self-center mt-4 lg:mt-0">
-            <div className="rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] relative">
-                <Image
-                    src="/images/avatar.png"
-                    alt="avatar"
-                    className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    width={150}
-                    height={150}
-                />
-            </div>
-        </motion.div>
+                <div className="rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] relative">
+                    <Image
+                        src="/images/avatar.png"
+                        alt="avatar"
+                        className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        width={150}
+                        height={150}
+                    />
+                </div>
+            </motion.div>
         </div>
     </section>
     );

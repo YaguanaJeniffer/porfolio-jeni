@@ -74,7 +74,7 @@ export const EmailSection = () => {
                         id='email'
                         required
                         className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
-                        placeholder='jeniyaguana@gmail.com'
+                        placeholder='example@gmail.com'
                     />
                     </div>
                     <div className='mb-6'>
@@ -114,7 +114,7 @@ export const EmailSection = () => {
                     </button>
                     {
                         emailSubmitted && (
-                            <p className='text-green-500 text-sm mt-2'>
+                            <p className='text-purple-600 text-sm mt-2'>
                                 Email sent successfully!
                             </p>
                         )

@@ -49,7 +49,7 @@ const AchievementsSection = () => {
                                 }}
                             />
                         </h2>
-                        <p className='text-[#ADB7BE] text-base'>
+                        <p className='text-[#ADB7BE] text-base sm:justify-center'>
                             {achievement.metric}
                         </p>
                     </div>

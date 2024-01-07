@@ -25,6 +25,19 @@ const TAB_DATA = [
         ),
     },
     {
+        title: "Hobbies",
+        id: "hobbies",
+        content: (
+        <ul className="list-disc pl-2">
+            <li>Dancing is one of my passions, especially dance.</li>
+            <li>Play the guitar.</li>
+            <li>Experiment with new cooking recipes.</li>
+            <li>Watching movies and series, there is always something new on my list.</li>
+            <li>Travel and explore different cultures</li>
+        </ul>
+        ),
+    },
+    {
         title: "Education",
         id: "education",
         content: (
@@ -49,7 +62,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-    const [tab, setTab] = useState("skills");
+    const [tab, setTab] = useState("hobbies");
     const [isPending, startTransition] = useTransition();
 
     const handleTabChange = (id) => { 
@@ -73,8 +86,8 @@ const AboutSection = () => {
             skills and enable the creation of impactful digital experiences.
             </p>
             <div className="flex flex-row justify-start mt-8">
-                <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>{" "}
-                    Skills { " " }
+                <TabButton selectTab={() => handleTabChange("hobbies")} active={tab === "hobbies"}>{" "}
+                    Hobbies { " " }
                 </TabButton>
                 <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>{" "}
                     Education{" "}

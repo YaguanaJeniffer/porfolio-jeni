@@ -7,8 +7,8 @@ import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 
 const colorMap = {
-  "yellow-300": "bg-yellow-300",
-  "green-300": "bg-green-300",
+  "yellow-300": "bg-amber-400",
+  "cyan-400": "bg-cyan-500",
   "teal-300": "bg-teal-300",
 };
 const SkilllSection = () => {
@@ -62,9 +62,10 @@ const SkilllSection = () => {
                 />
               </div>
               <div
-                className={`top-0 w-full text-center ${
+                className={`top-0 w-24 text-center ${
                   colorMap[skill.color]
-                } bg-opacity-80 z-10  mb-3 rounded-full py-0 w-10`}
+                } bg-opacity-80 z-10 mb-3 rounded-full py-0`}
+                style={{ marginLeft: "calc(30% - 12px)" }} // Ajustar el ancho deseado (en este caso, 24) y el margen izquierdo
               >
                 <p className="text-transparent text-white font-bold whitespace-nowrap mt-5 mx-auto">
                   {skill.nivel}

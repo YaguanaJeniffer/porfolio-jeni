@@ -47,7 +47,7 @@ export const EmailSection = () => {
                 <h5 className='text-xl font-bold text-white my-2'>
                     Let&apos;s Connect
                 </h5>
-                <p className='text-[#ADB7BE] mb-4 max-x-md'>
+                <p className='text-[#ADB7BE] mb-4 max-x-md text-justify'>
                     {" "}
                     I&apos;m actively seeking new opportunities, and my inbox is eagerly waiting for your message. Whether you have a question or just want to drop a friendly &quot;hi, I&apos;ll make sure to get back to you promptly! Your thoughts and inquiries are always welcomed.
                 </p>

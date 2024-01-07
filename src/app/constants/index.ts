@@ -29,7 +29,7 @@ export const SkillData = [
         name: "React",
         Image: "/icons/react.png",
         nivel: "High",
-        color: "green-300"
+        color: "cyan-400"
     },
     {
         name: "TypeScript",
